@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro CeroLimites</title>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/otra.css">
+    <script src="https://kit.fontawesome.com/5fab88efc3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-navbar fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/log3.png" width="150px" height="50px" alt="" class="img mx-2"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light linea" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="nosotros.html">Acerca de Nosotros</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="iniciarseson.html" class="btn-nav">
+                            <button type="button" class="btn btn-outline-light me-1">
+                            Iniciar Sesion
+                            </button>
+                        </a>
+                        <a href="registro.html" class="btn-nav">
+                            <button type="button" class="btn btn-outline-light">
+                            Registrarse
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="container w-75 my-5 rounded shadow">
+                <div class="row align-items-stretch">
+                    <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+                    </div>
+                    <div class="col p-5 rounded-end">
+                        <h2 class="fw-bold text-center py-5">Registrarse</h2>
+                        <form class="row g-3 needs-validation">
+                            <div class="mb-3">
+                                <label for="validationCustom01" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="validationCustom01" placeholder=""
+                                    pattern="[a-zA-Z]{2,30}" required minlength="3">
+                            </div>
+                            <div class="mb-3">
+                                <label for="validationCustom02" class="form-label">Apellido</label>
+                                <input type="text" class="form-control" id="validationCustom02" placeholder=""
+                                    pattern="[a-zA-Z]{3,35}" required minlength="3">
+                                <div class="valid-feedback">
+                                    Muy Bien!
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Correo Electrónico</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="nombre@gmail.com" required minlength="5">
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputPassword" class="col-sm-2 form-label">Contraseña</label>
+                                <input type="password" class="form-control" id="inputPassword" required minlength="8"
+                                    pattern="[a-zA-Z0-9]{8,30}">
+                                <div id="passwordHelpBlock" class="form-text">
+                                    La Contraseña debe tener un mínimo de 8 caracteres.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputPassword2" class="form-label">Repetir Contraseña</label>
+                                <input type="password" class="form-control" id="inputPassword2" required minlength="8"
+                                    pattern="[a-zA-Z0-9]{8,30}">
+                            </div>
+                        </form>                        
+                            <div class="container w-100">
+                                <div class="row align-items-center text-center">
+                                    <h6>Iniciar Sesion</h6>
+                                    <div class="col">
+                                        <button class="btn btn-outline-primary w-100 my-1">
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <img src="../img/facebook-circle-fill.png" alt="Iniciar sesion facebook">
+                                                </div>
+                                                <div class="col-10 text-center">
+                                                    Facebook
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="col">
+                                        <button class="btn btn-outline-primary w-100 my-1">
+                                            <div class="row align-items-center">
+                                                <div class="col-2">
+                                                    <img src="../img/google-fill.png" width="23" alt="Iniciar sesion google">
+                                                </div>
+                                                <div class="col-10 text-center">
+                                                    Google
+                                                </div>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-grid mt-5">
+                                <button class="btn btn-primary" type="submit">Registrarse</button>
+                            </div>
+                            <div class="my-3">
+                                <span> Ya tienes cuenta? <a href="../html/iniciarseson.html">Inicar Sesion</a></span> <br>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class=" text-light p-1">
+        <div class="d-flex justify-content-around align-items-center bg-footer">
+            <div class="row text-footer">
+                <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+                    <img width="300px" height="100px" src="../img/log3.png" alt="">
+                </div>
+                <div
+                    class="col-sm-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center gap-3">
+                    <h5 class="li-letra mb-3">Redes Sociales</h5>
+                    <ul class="list-unstyled d-flex">
+                        <li class="me-3">
+                            <a href="https://m.facebook.com/login/?locale=es_LA" target="_blank">
+                                <i class="fa-brands fa-facebook fa-fade fa-2xl ico-redes"></i>
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                                <i class="fa-brands fa-instagram fa-fade fa-2xl ico-redes"></i>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                                <i class="fa-brands fa-whatsapp fa-fade fa-2xl ico-redes"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center ">
+                    <p class="text-center ">Somos CEROLimites, una empresa dedicadas a los viajes por todo el mundo. Contamos con años de
+                        experiencia que nos han hecho recomendados por miles de clientes. Espero les guste nuestra
+                        pagina
+                        de Eccomers
+                        <br><br>
+                        ©COPYRIGHT 2023
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <title>CeroLimites</title>
+    <link rel="shortcut icon" href="../img/icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/5fab88efc3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-navbar fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../img/log3.png" width="150px" height="50px" alt="" class="img mx-2"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="nav nav-pills d-flex gap-3 mx-3 mb-3" id="pills-tab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link active btn-pill" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#nav-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Destinos</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link btn-pill" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Usuarios</button>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <button class="nav-link btn-pill" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Mensajes</button>
+                          </li>
+                        </ul>
+                    </ul>
+                    <div>
+                        <a href="../index.html"><button class="btn btn-outline-light me-1">
+                            Cerrar sesion
+                        </button></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+       
+    </header>
+    <main>
+          <div class="container mt-5">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Lugar</th>
+                            <th scope="col">Precio</th>
+                            <th scope="col">Acciones</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>Madrid</td>
+                            <td>xxxx</td>
+                            <td>
+                                <div>
+                                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                        Deshabilitar
+                                    </button>
+                                    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                        Editar
+                                    </button>
+                                </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>New York</td>
+                            <td>xxxx</td>
+                            <td>
+                                <div>
+                                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                        Deshabilitar
+                                    </button>
+                                    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                        Editar
+                                    </button>
+                                </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Buenos Aires</td>
+                            <td>xxxx</td>
+                            <td>
+                                <div>
+                                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                        Deshabilitar
+                                    </button>
+                                    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                        Editar
+                                    </button>
+                                </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Tokio</td>
+                            <td>xxxx</td>
+                            <td>
+                                <div>
+                                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                        Deshabilitar
+                                    </button>
+                                    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                        Editar
+                                    </button>
+                                </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>Santiago de Chile</td>
+                            <td>xxxx</td>
+                            <td>
+                                <div>
+                                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                        Deshabilitar
+                                    </button>
+                                    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                        Editar
+                                    </button>
+                                </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>Paris</td>
+                            <td>xxxx</td>
+                            <td>
+                                <div>
+                                    <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                        Deshabilitar
+                                    </button>
+                                    <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal5">
+                                        Editar
+                                    </button>
+                                </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <div>
+                                  <a href="./destinos/agregacion.html">
+                                    <button type="button" class="btn btn-success w-100">
+                                    Agregar    
+                                    </button>
+                                  </a> 
+                                </div> 
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Correo</th>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Permisos</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>
+                              <div>
+                                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                                      Deshabilitar
+                                  </button>
+                                  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                      Editar
+                                  </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>
+                              <div>
+                                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                                      Deshabilitar
+                                  </button>
+                                  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                      Editar
+                                  </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>
+                              <div>
+                                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                                      Deshabilitar
+                                  </button>
+                                  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                      Editar
+                                  </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>
+                              <div>
+                                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                                      Deshabilitar
+                                  </button>
+                                  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                      Editar
+                                  </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>
+                              <div>
+                                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                                      Deshabilitar
+                                  </button>
+                                  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                      Editar
+                                  </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>
+                              <div>
+                                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                                      Deshabilitar
+                                  </button>
+                                  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                      Editar
+                                  </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>
+                              <div>
+                                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                                      Deshabilitar
+                                  </button>
+                                  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                      Editar
+                                  </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>
+                              <div>
+                                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                                      Deshabilitar
+                                  </button>
+                                  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                      Editar
+                                  </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <th scope="row">9</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>
+                              <div>
+                                  <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal7">
+                                      Deshabilitar
+                                  </button>
+                                  <button type="button" class="btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal8">
+                                      Editar
+                                  </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">
+                    <table class="table table-dark table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Correo</th>
+                            <th scope="col">Categoria</th>
+                            <th scope="col">Asunto</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">1</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>----</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>----</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>----</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>----</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">5</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>----</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">6</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>----</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">7</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>----</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">8</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>----</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">9</th>
+                            <td>email@email</td>
+                            <td>xxxx</td>
+                            <td>----</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">...</div>
+            </div>
+        </div>
+  <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Viaje</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          "nombre del lugar"
+        </div>
+        <div class="modal-footer">
+          <a href="404-a.html"><button type="button" class="btn btn-danger" >ELIMINAR</button></a>
+          <a href="404-a.html"><button type="button" class="btn btn-secondary">DESHABILITAR</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modificacion</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="d-flex flex-column gap-3" action="">
+            <input type="text" class="form-control" name="" id="" placeholder="Cambiar nombre" pattern="[A-Za-zÁ-Úá-ú ]{4,25}" title="Debe contener solo letras y tener entre 4 y 25 caracteres" required>
+            <textarea name="" class="form-control" id="" cols="30" rows="10" placeholder="Cambiar descripcion" pattern="[A-Za-zÁ-Úá-ú ]{30,200}" title="Debe contener solo letras y espacios y tener entre 30 y 200 caracteres" minlength="30" maxlength="200" required></textarea>
+            <input type="number" class="form-control" name="" id="" placeholder="Cambiar precio" min="0" max="5000" title="Ingresar un valor solo hasta 5000$" required>
+            <div class="linea-gris"></div>
+            <button type="submit" class="btn btn-warning w-100">TERMINAR</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal7" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Usuario</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          "nombre de usuario"
+        </div>
+        <div class="modal-footer">
+          <a href="404-a.html"><button type="button" class="btn btn-danger">ELIMINAR</button></a>
+          <a href="404-a.html"><button type="button" class="btn btn-secondary">DESHABILITAR</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="exampleModal8" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modificacion</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form class="d-flex flex-column gap-3" action="">
+            <input type="text" class="form-control" name="" id="" placeholder="Cambiar nombre real" pattern="[A-Za-zÁ-Úá-ú ]{4,25}" title="Debe contener solo letras y tener entre 4 y 25 caracteres" required>
+            <input type="text" class="form-control" name="" id="" placeholder="Cambiar nick" minlength="2" maxlength="20" required>
+            <input type="text" class="form-control" name="" id="" placeholder="Cambiar contraseña" minlength="8" maxlength="20" required>
+            <div class="linea-gris"></div>
+            <button type="submit" class="btn btn-warning w-100">TERMINAR</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

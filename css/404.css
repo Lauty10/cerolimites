@@ -1,0 +1,209 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Geologica:wght@100&family=Pacifico&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+body{
+    background-color: rgb(46, 50, 100);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor{
+    width: 60%;
+    height: 70%;
+    /*background-color: aqua;*/
+}
+
+
+.interno{
+    width: 100%;
+    height: 60%;
+    /*background-color: black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.intermedio{
+    padding-bottom: 80px;
+}
+
+.cuatro{
+    font-size: 14rem;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;/*
+    text-shadow: 10px 0px 10px black;*//*
+    animation-name: letra;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;*/
+}
+
+.cuatro:first-child{
+    animation-name: letra-i;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+.cuatro:last-child{
+    animation-name: letra-d;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.img-planeta{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    /*border: 1px solid rgba(245, 222, 179, 0.557);*/
+    animation-name: planeta;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.img-avion{
+    width: 100px;
+    height: 80px;
+    animation-name: avion;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes planeta{
+    0%{
+        
+    }
+    50%{
+        /*box-shadow: 0px 0px 20px rgb(255, 255, 255);*/ 
+        filter: drop-shadow(0px 0px 30px rgb(255, 251, 243));
+    }
+    100%{
+       transform: rotate(-360deg); 
+       /*box-shadow: 0px 0px 0px wheat;*/
+       filter: drop-shadow(0px 0px 0px wheat);
+    }
+}
+/*
+@keyframes letras{
+    0%{   
+    }
+    50%{
+        text-shadow: 0px 0px 50px wheat; 
+    }
+    100%{ 
+        text-shadow: 0px 0px 0px 0px wheat;
+    }
+}
+
+@keyframes letra{
+    0%{   
+        text-shadow: 10px 0px 10px black;
+    }
+    
+    100%{ 
+        text-shadow: -10px 0px 10px black;
+    }
+}
+*/
+
+
+@keyframes letra-d{
+    0%{   
+        text-shadow: -10px 0px 15px black;
+    }
+    
+    100%{ 
+        text-shadow: 10px 0px 15px black;
+    }
+}
+
+@keyframes letra-i{
+    0%{   
+        text-shadow: 10px 0px 15px black;
+    }
+    
+    100%{ 
+        text-shadow: -10px 0px 15px black;
+    }
+}
+
+@keyframes avion{
+    0%{   
+    }
+    50%{
+        transform: translateY(10px); 
+    }
+    100%{ 
+        transform: translateY(0px);
+    }
+}
+
+
+.texto{
+    font-size: 2rem;
+    color: white;
+}
+span{
+    font-size: 4rem;
+    font-weight: bold;
+    color: rgb(251, 235, 206);
+}
+
+button{
+    border-radius: 20px;
+    background-color: rgb(189, 58, 58);
+    color: white;
+    height: 40px;
+    border: none;
+    width: 200px;
+    transition:background-color,.3s ;
+}
+
+button:hover{
+    background-color: rgb(225, 76, 76);
+}
+
+
+@media screen and (max-width:520px){
+    .cuatro{
+        font-size: 8rem;
+    }
+    .img-planeta{
+        width: 110px;
+        height: 110px;
+    }
+    .img-avion{
+        width: 50px;
+        height: 40px;
+    }
+    .texto{
+        font-size: 1.5rem;
+    }
+    span{
+        font-size: 3rem;
+    }
+    .interno{
+        height: 50%;
+    }
+}
+
+@media screen and (max-width:385px){
+    .texto{
+        padding-left: 30px;
+    }
+}

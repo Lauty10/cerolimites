@@ -1,0 +1,244 @@
+body {
+    background-color: rgb(200, 200, 200);  
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 56px;  
+}
+
+.navbar-toggler{
+    color: rgba(251, 251, 251, 0.58) ;
+    background-color: #a8d5eb7d;
+}
+
+.btn-volver{
+    margin-left: 10px;
+}
+
+.linea{
+    text-decoration: underline;
+}
+
+.main-perfil{
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+.bg-navbar{
+    background-color: #00202e;
+}
+
+
+.foto-perfil{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgb(47, 46, 46);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono-form{
+    font-size: 5rem;
+}
+
+.ico-perfil{
+    /*color: #2e2424;*/
+    color: #ffffff;
+    animation-name: sombreado;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes sombreado{
+    from{
+    }
+    to{
+        text-shadow: 0px 0px 50px #ffffff;
+    }
+}
+
+.yo{
+    padding-top: 50px;
+    border-bottom: 1px solid rgb(210, 210, 210);
+    
+}
+
+.tarjeta{
+    margin: 0 160px;
+    border-radius: 15px;
+    box-shadow: 10px 5px 20px grey;
+    background-color: #d7e7f6;
+}
+
+.eti-flex{
+    gap: 35px;
+}
+
+
+.medalla{
+    font-size: 1.2rem;
+}
+
+.medalla:first-child{
+    background-color: #c38eb4;
+}
+
+.medalla:nth-child(2){
+    background-color: #86abcf;
+}
+
+.medalla:last-child{
+    background-color: #f1916d;
+    
+}
+
+.nivel{
+    width: 50%;
+    height: 150px;
+    border-radius: 15px;
+    background: rgb(169,15,144);
+    background: linear-gradient(90deg, rgba(169,15,144,1) 20%, rgba(12,26,81,1) 100%);
+    color:#ffffff
+}
+
+.nivel-letra{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.encapsulado{
+    width: 30px;
+    height: 30px;
+    border-radius: 500%;
+    border: 1px solid white;
+    margin-bottom: 12px;
+    font-size: 1.2rem;
+}
+
+.contenedor-galeria{
+    margin-top: 40px;
+    padding-right: 50px;
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+.link-galeria{
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: underline;
+    color: rgb(255, 106, 0);
+}
+
+footer{
+    margin-top: auto;
+    height: 100%;
+    background-color: #00202e;
+    width: 100%;
+}
+
+.bg-footer{
+    background-color: #00202e;
+    height: 250px;
+    width: 100%;
+}
+
+.text-footer{
+    padding-right: 0 0;
+    width: 100%;
+}
+
+.ico-redes{
+    color: #00c8ff;
+}
+
+.li-letra{
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width:992px){
+
+    .tarjeta{
+        margin: 0 50px;
+    }    
+}
+
+
+@media screen and (max-width:767px){
+    body{
+        background-color: #ffffff;
+    }
+    .fila{
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }    
+    .yo{
+        color: #ffffff;
+        background-color: rgb(8, 46, 113);
+        padding: 30px 0px;
+    }
+    .nivel{
+        width: 100%;
+    }
+    .tarjeta{
+        margin: 0 0;
+        box-shadow: 0px 10px 20px grey;
+    }
+    .contenedor-galeria{
+        margin-top: 40px;
+        padding-right: 0px;
+    }
+    .link-galeria{
+        font-size: .9rem;
+    }
+    .bg-footer{
+        height: 500px;
+    }
+    .text-footer{
+        gap: 30px;
+    }
+
+}
+
+
+@media screen and (max-width:575px){
+
+    .tarjeta{
+        margin: 0;
+        padding-top: 10px;
+        border-radius: 0;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        box-shadow: none;
+        background-color: #d5d5d5;
+    } 
+    .etiqueta{
+        border-bottom: 1px solid rgb(205, 205, 205);
+        padding-bottom: 100px;
+    }   
+    .eti-flex{
+        gap: 20px;
+    }
+    .medalla{
+        font-size: 1rem;
+    }
+    .contenedor-galeria{
+       
+        justify-content: center;
+        
+    }
+
+}
+
+@media screen and (max-width:383px){
+    .bg-footer{
+        height: 480px;
+    }
+}
+

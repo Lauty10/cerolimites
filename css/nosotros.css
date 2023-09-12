@@ -1,0 +1,307 @@
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1544&q=80');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00202e;
+    padding: 10px 0;
+}
+
+.navbar-toggler{
+    color: rgba(251, 251, 251, 0.58) ;
+    background-color: #a8d5eb7d;
+}
+
+main{
+    width: 100%;
+}
+
+.navbar {
+    background-color: #00202e;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.btn-nav{
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #00202e;
+    border-color: #00202e;
+}
+
+.btn-primary:hover {
+    background-color: #00202e;
+    border-color: #00202e;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #00202e;
+}
+
+.carousel-inner {
+    background-color: #f0f8ff;
+}
+
+.tarjetas {
+    background-color: #00202e;
+    padding: 20px 0;
+}
+
+.card {
+    background-color: #f0f8ff;
+    text-align: center;
+    border: none;
+    box-shadow: none;
+}
+
+.quality-policy {
+    background-color: #00202e;
+    padding: 20px 0;
+
+}
+
+.testimonials {
+    background-color: #f0f8ff;
+    padding: 20px 0;
+}
+
+.offices {
+    background-color: #00202e;
+    padding: 20px 0;
+}
+
+
+.list-unstyled a i {
+    color: #00202e;
+}
+
+.promo {
+    background-color: #00202e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+
+
+/* Estilo para Nuestra Historia */
+.nuestrahistoria {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 30px 0;
+}
+
+/* Estilo para Testimonios */
+.testimonials {
+    text-align: center;
+    padding: 20px;
+}
+
+.testimonial {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial img {
+    max-width: 100px;
+    border-radius: 50%;
+}
+
+.testimonial p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+
+}
+
+.card {
+    background: none;
+    border: none;
+    box-shadow: none;
+    text-align: center;
+}
+
+.card-title {
+margin-top: 10px;
+}
+
+.divtarjetas {
+background-color: rgba(0, 0, 0, 0.5);
+text-align: center;
+width: 100%;
+}
+.card-title{
+color: white;
+text-align: center;
+font-size: 20px;
+font-weight: bold;
+font-family:'Lora', serif;
+
+}
+.card-text{
+color: white;
+text-align: center;
+font-size: 20px;
+font-weight: lighter;
+font-family: 'Montserrat', sans-serif;
+
+}
+.titulo{
+color: white;
+text-align: center;
+font-size: 40px;
+font-weight: bold;
+font-family: 'Lora', serif;
+
+}
+.texto{
+color: white;
+text-align: center;
+font-size: 20px;
+font-weight: lighter;
+font-family: 'Montserrat', sans-serif;
+}
+.online{
+color: white;
+text-align: justify;
+font-size: 15px;
+font-weight: lighter;
+font-family: 'Montserrat', sans-serif;
+}
+
+.central{
+color: white;
+text-align: justify;
+font-size: 15px;
+font-weight: lighter;
+font-family: 'Montserrat', sans-serif;
+
+}
+.oficinas{
+color: white;
+text-align: center;
+font-size: 40px;
+font-weight: bold;
+font-family:'Lora', serif;
+}
+.testimonio{
+color: black;
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+font-family: 'Lora', serif;
+
+}
+.newletter{
+text-align: center;
+font-size: 20px;
+font-weight: bold;
+font-family:'Lora', serif;
+}
+.tit-new{
+background-color: rgba(0, 0, 0, 0.5);
+color: #f0f8ff;
+}
+.numero{
+color: #f0f8ff;
+}
+.quality-policy{
+color: #f0f8ff;
+}
+
+.slider-principal{
+padding: 0px;
+}
+.slide img{
+height: 70vh;
+}
+
+
+.list-unstyled a i {
+    color: #00202e;
+}
+
+.promo {
+    background-color: #00202e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer{
+    margin-top: auto;
+    height: 100%;
+    background-color: #00202e;
+    width: 100%;
+}
+
+.bg-footer{
+    background-color: #00202e;
+    height: 250px;
+    width: 100%;
+}
+
+.text-footer{
+    padding-right: 0 0;
+    width: 100%;
+}
+
+.ico-redes{
+    color: #00c8ff !important;
+}
+
+.li-letra{
+    font-size: 1.6rem;
+}
+
+.bg-navbar{
+    background-color: #00202e;
+}
+
+@media screen and (max-width:767px){
+    
+    .bg-footer{
+        height: 500px;
+    }
+    .text-footer{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:383px){
+    .bg-footer{
+        height: 480px;
+    }
+}
+
+.btn-volver{
+    margin-left: 10px;
+}
+
+.linea{
+    text-decoration: underline;
+}
+  

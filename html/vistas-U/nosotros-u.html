@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros</title>
+    <link rel="shortcut icon" href="../../img/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5fab88efc3.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+   <link rel="stylesheet" href="../../css/nosotros.css">
+</head>
+<body>
+ <header>
+    <nav class="navbar navbar-expand-lg bg-navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="inicio-u.html"><img src="../../img/log3.png" width="150px" height="50px" alt="" class="img mx-2"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="inicio-u.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contacto-u.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light linea" href="nosotros-u.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="perfil.html">Perfil</a>
+                    </li>
+                </ul>
+                <div>
+                    <button type="button"  class="btn btn-outline-light btn-sm mx-2" data-bs-toggle="modal"            data-bs-target="#ModalPerfil">
+                       Favoritos
+                    </button>
+                    <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        Ver Carrito
+                    </button>
+                    <a href="../../index.html">
+                        <button class="btn btn-outline-light me-1 btn-volver">
+                        Cerrar sesion
+                        </button>
+                    </a>
+                </div>        
+            </div>
+        </div>
+    </nav>    
+ </header>    
+<div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Carrito de Compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="cart-list">
+                    <li>Madrid - Precio: $100.000usd</li>
+                    <li>Tokyo - Precio: $200.000usd</li>
+                    <li>New York - Precio: $150.000usd</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <a href="404.html">
+                    <button type="button" class="btn btn-primary">Realizar Compra</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+ <div class="modal fade" id="ModalPerfil" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="profileModalLabel">Favoritos</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="profileName" class="form-label">Santiago de Chile</label>
+                    </div>
+                    <div class="mb-3">
+                        <img src="https://images.unsplash.com/photo-1566079463188-97d2f1352582?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" width="150px">
+                    </div>
+                </form>
+                <form>
+                    <div class="mb-3">
+                        <label for="profileName" class="form-label">Paris</label>
+                    </div>
+                    <div class="mb-3">
+                        <img src="https://images.unsplash.com/photo-1550340499-a6c60fc8287c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" width="150px">
+                    </div>
+                </form>
+                <form>
+                    <div class="mb-3">
+                        <label for="profileName" class="form-label">Buenos Aires</label>
+                    </div>
+                    <div class="mb-3">
+                        <img src="https://images.unsplash.com/photo-1612294037637-ec328d0e075e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" width="150px">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <br>
+    <main class="mt-3">
+    <br>
+    <div class="nuestrahistoria">
+        <h1 class="titulo">Nuestra Historia</h1>
+   <p class="texto">Somos Facundo, Lautaro, Martín y Zoe, un equipo apasionado por programación y viajes. Creamos "CeroLimites", fusionando códigos y destinos. Nuestra unión surge de explorar lo digital y combinar la creación con los viajes. Facundo aporta estilo, Lautaro asegura funcionamiento, Martín diseña experiencias y Zoe da vida con palabras. Compartimos itinerarios en web, de exóticos a locales, para descubrir, aprender y conectar. Construimos una comunidad de exploradores que valoran experiencias y recuerdos. Únete a la aventura donde las limitaciones desaparecen y horizontes se expanden. Gracias por ser parte de "CeroLimites", estamos aquí para ayudarte a explorar, abrazar lo desconocido y crear recuerdos invaluables. Juntos, saltamos hacia nuevos horizontes.</p>
+    </div>
+<br>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 col-lg-12 slider-principal">
+            <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="d-block w-100" alt="programador">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="d-block w-100" alt="codigo-programacion">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1619410283995-43d9134e7656?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" class="d-block w-100" alt="codigo-programacion">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+  </div>
+<br>
+
+<div class="divtarjetas">
+    <div class="row d-flex justify-content-center align-itemns-center w-100">
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="../../img/Facundo.jpg" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Facundo</h5>
+                    <p class="card-text">19 años, de Tucumán. Facundo es un gran jugador de volley que le gusta la tranquilidad y el orden. Siempre quiso indagar en la programacion y actualmente sigue formándose en RollingCodeSchool.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+            <div class="card " style="width: 18rem;">
+                <img src="../../img/lautaro.jpg" alt="" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lautaro Maldonado</h5>
+                    <p class="card-text">23 años, de Buenos Aires. Le gusta leer y jugar al fútbol. Trabajó por tres años en una empresa de logística administrativa y dejó para dedicarse a lo que le apasiona que es programar</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="../../img/zoe.jpg" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Zoe van Broock</h5>
+                    <p class="card-text">20 años, de Tucumán viviendo en Buenos Aires. Sus pasiones son el yoga y viajar. Trabaja de moza en "Legado Café" y disfrutó aprender a programar de cero en este último tiempo</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem;">
+                <img src="../../img/martin.enc" class="card-img-top rounded-circle" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Martin Argañaraz</h5>
+                    <p class="card-text"> Martin, 21 años de Tucuman actualmente estudiante de programación en tres instituciones y trabaja en un taller de carrocería y pintura.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+<br>
+<section class="quality-policy">
+   <p><strong>Nuestros Valores, la Esencia de Nuestra Identidad</strong></p>
+    <ul>
+        <li>Calidad: Siempre apuntamos a lo mejor.</li>
+        <li>Creatividad: Exploramos nuevas formas de hacer las cosas.</li>
+        <li>Calidez: Nuestro trato es cercano y humano.</li>
+        <li>Integridad: Mantenemos la ética en cada acción.</li>
+        <li>Maestría en el Hacer: Realizamos cada tarea con excelencia.</li>
+        <li>Relaciones Asociativas: Promovemos relaciones basadas en colaboración y asociación.</li>
+        <li>Positivismo: Encaramos cada desafío con optimismo.</li>
+        <li>Liderazgo Participativo: Cada uno aporta al liderazgo en conjunto.</li>
+    </ul>
+</section>
+<br>
+<section class="testimonials">
+    <h2 class="testimonio">Testimonios de Clientes</h2>
+    <div class="testimonial">
+        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Cliente 1">
+        <p>"¡Experiencia recomendable!"</p>
+        <p><strong>María Pérez</strong></p>
+    </div>
+    <div class="testimonial">
+        <img src="https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Cliente 2">
+        <p>"¡Increíble atención y acompañamiento!"</p>
+        <p><strong>Juan Martínez</strong></p>
+    </div>
+</section>
+<br>
+<section class="offices">
+    <h2 class="oficinas">Oficinas</h2>
+    <div>
+        <p class="online"><strong>VENTAS ONLINE | Consultanos por tu viaje</strong></p>
+    <p class="numero"><a href="mailto:ventasonline@cerolimites.com">ventasonline@cerolimites.com</a> - 0800 555 6923</p>
+    </div>
+    <div>
+        <p class="central"><strong>CASA CENTRAL</strong></p>
+    <p class="numero">Lavalleja 785, Pisos 2 y 3, Cofico, Córdoba - 06456 7859</p>
+    </div>
+</section>
+<br>
+<div class="newletter">
+    <p class="tit-new">¡CONOCÉ NUESTRAS NOVEDADES Y PROMOCIONES!</p>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="alert alert-primary" role="alert">
+                    ¡Ingresá tu mail y recibí nuestro Newsletter!
+                </div>
+                <form>
+                    <div class="input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Tu correo electrónico" aria-label="Tu correo electrónico" aria-describedby="button-addon2" minlength="5" maxlength="20" title="Por lo menos 5 caracteres" required>
+                        <button class="btn btn-outline-secondary" type="submit" id="button-addon2">Suscribirse</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</main>
+<footer class=" text-light p-1">
+    <div class="d-flex justify-content-around align-items-center bg-footer">
+        <div class="row text-footer">
+            <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+                <img width="300px" height="100px" src="../../img/log3.png" alt="">
+            </div>
+            <div
+                class="col-sm-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center gap-3">
+                <h5 class="li-letra mb-3">Redes Sociales</h5>
+                <ul class="list-unstyled d-flex">
+                    <li class="me-3">
+                        <a href="https://m.facebook.com/login/?locale=es_LA" target="_blank">
+                            <i class="fa-brands fa-facebook fa-fade fa-2xl ico-redes"></i>
+                        </a>
+                    </li>
+                    <li class="me-3">
+                        <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                            <i class="fa-brands fa-instagram fa-fade fa-2xl ico-redes"></i>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                            <i class="fa-brands fa-whatsapp fa-fade fa-2xl ico-redes"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center ">
+                <p class="text-center ">Somos CEROLimites, una empresa dedicadas a los viajes por todo el mundo. Contamos con años de
+                    experiencia que nos han hecho recomendados por miles de clientes. Espero les guste nuestra
+                    pagina
+                    de Eccomers
+                    <br><br>
+                    ©COPYRIGHT 2023
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>

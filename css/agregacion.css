@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+padding-top: 56px;
+
+}
+
+.navbar-toggler{
+    color: rgba(251, 251, 251, 0.58);
+    background-color: #a8d5eb7d;
+}
+
+.btn-nav{
+    text-decoration: none;
+}
+
+footer{
+margin-top: auto;
+height: 100%;
+}
+.bg-footer{
+    background-color: #00202e;
+}
+
+.bg-navbar{
+    background-color: #00202e;
+}
+.slide img{
+    height: 60vh;
+}
+#color-body{
+    background-color:   #00455a;
+    color: white;
+}
+.color-container-tokio{
+    background-color:#00202e;
+    box-shadow: 0 0 10px rgba(236, 232, 232, 0.865);
+}
+@media screen and (max-width:576px){
+    .relleno{
+        padding: 0 30px;
+    }
+}
+ .tokio-img img{
+    height: auto;
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(236, 232, 232, 0.865);
+
+ }
+ .formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .formulario input, .formulario textarea {
+  width: 300px; /* Esto hace que los elementos tengan un ancho de 300px */
+  margin: 0 auto; /* Esto hace que los elementos tengan un margen automático a los lados */
+}
+
+.img-slider{
+    height: 477px;
+    width: 100%;
+    background-color: #061014;
+}
+
+.primera-descripcion{
+    height: 300px;
+}
+
+.img-intermedio{
+    width: 1132px;
+    height: 750px;
+    background-color: #061014;
+}
+
+.segunda-descripcion{
+    height: 250px;
+}
+
+.tarjeta{
+    width: 400px;
+    height: 200px;
+    background-color: #19272d;
+    border-radius: 5px;
+}
+
+.img-producto{
+    width: 100%;
+    height: 100%;
+    background-color: #061014;
+}
+
+.linkk{
+    text-decoration: none;
+    color: #ffffff;
+}
+.linkk:hover{
+    text-decoration: underline;
+}

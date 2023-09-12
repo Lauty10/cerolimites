@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="El mejor sitio para viajes internacionales en todo el mundo">
+    <meta name="keywords" content="viajes,destinos turisticos,España,Madrid,viaje">
+    <title>Madrid CeroLimites</title>
+    <link rel="shortcut icon" href="../../img/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5fab88efc3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/destinos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body id="color-body">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="inicio-u.html"><img src="../../img/log3.png" width="150px" height="50px" alt="" class="img mx-2"></a>
+            <button class="navbar-toggler bg-dark-subtle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="inicio-u.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contacto-u.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="nosotros-u.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="perfil.html">Perfil</a>
+                    </li>
+                </ul>
+                <div>
+                    <button type="button"  class="btn btn-outline-light btn-sm mx-2" data-bs-toggle="modal"            data-bs-target="#ModalPerfil">
+                       Favoritos
+                    </button>
+
+                    <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        Ver Carrito
+                    </button>
+                    <a href="../../index.html">
+                        <button class="btn btn-outline-light me-1 btn-volver">
+                        Cerrar sesion
+                        </button>
+                    </a>
+                </div>        
+            </div>
+        </div>
+      </nav>    
+   </header>    
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title color" id="cartModalLabel">Carrito de Compras</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ul class="cart-list color">
+                      <li>Madrid - Precio: $100.000usd</li>
+                      <li>Tokyo - Precio: $200.000usd</li>
+                      <li>New York - Precio: $150.000usd</li>
+                  </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <a href="404.html">
+                        <button type="button" class="btn btn-primary">Realizar Compra</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalPerfil" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title color" id="profileModalLabel">Favoritos</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body color">
+                    <form>
+                        <div class="mb-3">
+                            <label for="profileName" class="form-label">Santiago de Chile</label>
+                        </div>
+                        <div class="mb-3">
+                            <img src="https://images.unsplash.com/photo-1566079463188-97d2f1352582?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" width="150px">
+                        </div>
+                    </form>
+                    <form>
+                        <div class="mb-3">
+                            <label for="profileName" class="form-label">Paris</label>
+                        </div>
+                        <div class="mb-3">
+                            <img src="https://images.unsplash.com/photo-1550340499-a6c60fc8287c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" width="150px">
+                        </div>
+                    </form>
+                    <form>
+                        <div class="mb-3">
+                            <label for="profileName" class="form-label">Buenos Aires</label>
+                        </div>
+                        <div class="mb-3">
+                            <img src="https://images.unsplash.com/photo-1612294037637-ec328d0e075e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" width="150px">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="mb-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://images.pexels.com/photos/930595/pexels-photo-930595.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="madrid-plaza">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://images.pexels.com/photos/670261/pexels-photo-670261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="ciudad-de-madrid">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://images.pexels.com/photos/3763907/pexels-photo-3763907.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="monumento-madrid">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container color-container-tokio py-4 d-flex justify-content-center">
+            <div class="row">
+                <div class="col-sm-5 col-md-6 col-lg-6 mx-auto">
+                    <P class="relleno">¿Te gustaría viajar a Madrid, la capital española? Cerolimistes Madrid es la capital y la ciudad más grande de España. Esta ciudad tiene una población de unos 3,3 millones de habitantes y una rica historia y cultura. Es una ciudad muy verde, con muchos parques y árboles1. También es un destino turístico muy popular, con museos, monumentos, gastronomía y vida nocturna</P>
+                </div>
+                <div class="col-sm-5 col-md-6 col-lg-6 mx-auto ">
+                   <p class="relleno">Madrid tiene una historia muy larga y variada. Se cree que sus orígenes se remontan a la época musulmana, cuando se llamaba Magerit y era una fortaleza en la frontera con los reinos cristianos. En el siglo XVI, Felipe II trasladó la corte desde Toledo a Madrid, convirtiéndola en la capital del imperio español. Desde entonces, Madrid ha sido testigo de guerras, revoluciones, dictaduras y democracias, y ha crecido hasta convertirse en una metrópoli moderna y cosmopolita</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="d-grid gap-2 dropdown">
+                        <button class="btn btn-primary  dropdown-toggle" type="button" data-bs-toggle="dropdown">Actividades de Cerolimites en Madrid</button>
+                        <ul class="dropdown-menu  dropdown-menu-center w-100 text-center" style="margin: 0 10px; background-color:  #000000;">
+                            <li><a href="https://www.pradomuseumtickets.com/es/prado-museum-history/?msclkid=c60bc4631ce119c9730fa0860c1d07ca&utm_source=bing&utm_medium=cpc&utm_campaign=Madrid%20-%20Prado%20Museum%20-%20Spanish%20-%20Rest%20of%20World%20-%20Search%20-%20All%20-%20All%20-%20cid576&utm_term=www.pradomuseumtickets.com%2Fes%2F&utm_content=DSA%20-%20All%20-%20Spanish%20-%20All" target="_blank">Museo </a></li>
+                            <li><a href="https://www.civitatis.com/ar/madrid/visita-guiada-palacio-real?aid=104&cmp=es_AR_Nonbrand&cmpint=_ActividadesINTL_Madrid&gclid=a3812ac1f2331d6306024e24e317ad69&gclsrc=3p.ds&msclkid=a3812ac1f2331d6306024e24e317ad69&utm_source=bing&utm_medium=cpc&utm_campaign=es_AR_Madrid_Actividades&utm_term=palacio%20real%20madrid&utm_content=es_AR_Madrid_Actividades_Visita%20guiada%20por%20el%20Palacio%20Real_880" target="_blank">Palacio real de Madrid</a></li>
+                            <li><a href="https://www.viajeroscallejeros.com/toledo-en-un-dia/" target="_blank">De Madrid a Toledo en bus</a></li>
+                            <li><a href="http://www.webmadrid.com/la-noche-madrilena.php" target="_blank">La noche Madrileña</a></li>
+                            <li><a href="https://www.guiarepsol.com/es/comer/nuestros-favoritos/platos-tipicos-de-madrid/" target="_blank">Conoce la gastronomia Madrileña</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 mt-5 d-flex justify-content-center tokio-img">
+                    <img src="https://images.pexels.com/photos/919291/pexels-photo-919291.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Madrid">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container py-4 color-container-tokio">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col">
+                    <p class="relleno">Cerolimites en este paquete los invita al hotel Madrid Place es un exclusivo alojamiento de 5 estrellas situado en el centro de Madrid, a pocos pasos de los principales museos, el Palacio Real y la Puerta del Sol. Es el alojamiento ideal para disfrutar de la cultura, la gastronomía y la vida nocturna de la capital.El hotel cuenta con 200 habitaciones y suites, todas ellas decoradas con elegancia y equipadas con todas las comodidades: wifi gratis, aire acondicionado, minibar, caja fuerte, TV de pantalla plana, baño privado con secador de pelo y artículos de aseo.El Hotel Madrid Palace te ofrece una experiencia única e inolvidable en el corazón de Madrid. Reserva ya tu habitación y disfruta de una oferta especial: desayuno buffet incluido, entrada gratuita al museo del Prado y una botella de cava de bienvenida. ¡No te lo pierdas!</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <div class="card mb-3" style="max-width: 540px; border-color: black; box-shadow: 0 0 10px rgba(236, 232, 232, 0.865);">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="https://images.pexels.com/photos/3757136/pexels-photo-3757136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class=" h-100 img-fluid rounded-start" alt="Madrid">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body bg-dark text-light ">
+                              <h5 class="card-title">Madrid</h5>
+                              <p class="card-text">CeroLimites te invita a conocer la ciudad de Madrid. Este viaje incluye 6 dias y 5 noches en Madrid. El paquete incluye todo lo anterior mencionado y un recorrido por la ciudad con un guia a todas las actividades que ofrece CeroLimites. Este pack cuenta con viaje de ida y vuelta</p>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <a href="404.html">
+                                    <button type="button" class="btn btn-primary ">Precio final 1250 USD
+                                    </button>
+                                </a>
+                                <div class="d-flex gap-3">
+                                  <i class="bi bi-bookmark-star-fill ico" data-bs-toggle="tooltip" data-bs-placement="top"
+                                  data-bs-class="custom-tooltip"
+                                  title="Agregar a favoritos"></i>
+                                  <i class="bi bi-cart-plus ico" data-bs-toggle="tooltip" data-bs-placement="top"
+                                  data-bs-class="custom-tooltip"
+                                  title="Agregar al carrito"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container d-flex justify-content-center color-container-tokio">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <form action="https://formspree.io/f/mjvqwwyr" method="post" class="formulario">
+                        <h1 class="mb-3 mt-3">Valora este paquete a Madrid</h1>
+                        <p>Nombre:<input type="text" name="nombre" required pattern="[A-Za-z\s]+" minlength="2" maxlength="20"></p>
+                        <p>Correo :<input type="email" name="email" required></p>   
+                        <p>Calificación:
+                          <select name="calificacion" required>
+                            <option value="1">⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                          </select>
+                        </p>
+                        <p><textarea name="comentario" rows="5" cols="40"  pattern="[A-Za-z0-9\s.,;:?!]+" required placeholder="Deja tu comentario" minlength="4"></textarea></p>
+                        <p><input type="submit" value="Enviar"></p>
+                      </form>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                      <ul class="comentarios mt-4">
+                        <li class="mb-2">
+                          <p><strong>Juan</strong> ⭐⭐⭐⭐⭐</p>
+                          <p>Me encantó el viaje a Madrid, fue una experiencia increíble. El hotel era muy lujoso y cómodo, el vuelo fue rápido y puntual, y la ciudad tenía mucho para ofrecer. Disfruté de los museos, los monumentos, la comida y la fiesta. Recomiendo este viaje a todos los que quieran conocer una de las capitales más bonitas de Europa.</p>
+                        </li>
+                        <li class="mb-2">
+                          <p><strong>Mario</strong> ⭐⭐⭐⭐</p>
+                          <p>El viaje a Madrid fue muy bueno, me gustó mucho el hotel y el servicio. El vuelo fue un poco largo pero valió la pena. Madrid es una ciudad muy interesante y divertida, tiene mucha cultura e historia. Lo único que mejoraría es el precio, me pareció un poco caro. Pero en general, quedé muy satisfecho con el viaje.</p>
+                        </li>
+                        <li class="mb-2">
+                          <p><strong>Delfina</strong> ⭐⭐⭐⭐⭐</p>
+                          <p>El viaje a Madrid fue una buena opción, el hotel estaba bien ubicado y tenía todo lo necesario. El vuelo fue sin problemas y llegamos a tiempo. Madrid es una ciudad muy animada y variada, hay mucho para ver y hacer</p>
+                        </li>
+                        <li class="mb-2">
+                          <p><strong>Facundo</strong> ⭐⭐⭐</p>
+                          <p>El viaje a Madrid fue aceptable, el hotel era decente y limpio. El vuelo fue normal, aunque hubo un poco de turbulencia. Madrid es una ciudad grande y concurrida, tiene algunos lugares bonitos</p>
+                        </li class="mb-2">
+                        <p><strong>Zoe</strong> ⭐⭐⭐⭐</p>
+                         <p>Me encantó el viaje a Madrid, fue una experiencia increíble</p>
+                         </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+      
+    </main>
+    <footer class=" text-light p-1">
+        <div class="d-flex justify-content-around align-items-center bg-footer">
+            <div class="row text-footer">
+                <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+                    <img width="300px" height="100px" src="../../img/log3.png" alt="">
+                </div>
+                <div
+                    class="col-sm-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center gap-3">
+                    <h5 class="li-letra mb-3">Redes Sociales</h5>
+                    <ul class="list-unstyled d-flex">
+                        <li class="me-3">
+                            <a href="https://m.facebook.com/login/?locale=es_LA" target="_blank">
+                                <i class="fa-brands fa-facebook fa-fade fa-2xl ico-redes"></i>
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                                <i class="fa-brands fa-instagram fa-fade fa-2xl ico-redes"></i>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                                <i class="fa-brands fa-whatsapp fa-fade fa-2xl ico-redes"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center ">
+                    <p class="text-center ">Somos CEROLimites, una empresa dedicadas a los viajes por todo el mundo. Contamos con años de
+                        experiencia que nos han hecho recomendados por miles de clientes. Espero les guste nuestra
+                        pagina
+                        de Eccomers
+                        <br><br>
+                        ©COPYRIGHT 2023
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
+

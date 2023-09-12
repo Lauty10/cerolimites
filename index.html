@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="El mejor sitio para viajes internacionales en todo el mundo">
+    <meta name="keywords" content="viajes,destinos turisticos,madrid,buenos aires,tokio,paris,santiago de chile,new york,viaje argentina,viaje españa,viaje francia,viaje chile,viaje japon,viaje estados unidos,">
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
+    <title>CeroLimites</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/5fab88efc3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-navbar fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="img/log3.png" width="150px" height="50px" alt="" class="img mx-2"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light linea" aria-current="page" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="html/contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="html/nosotros.html">Acerca de Nosotros</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <a href="html/iniciarseson.html" class="btn-nav">
+                            <button type="button" class="btn btn-outline-light me-1">
+                            Iniciar Sesion
+                            </button>
+                        </a>
+                        <a href="html/registro.html" class="btn-nav">
+                            <button type="button" class="btn btn-outline-light">
+                            Registrarse
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+       <section class="container-auto px-0">
+            <div class="w-100  contenedor-slider">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
+                    <div class="carousel-inner">
+                      <div class="carousel-item active" data-bs-interval="1000">
+                        <img class="img-slider img-fluid" src="img/in.jpg" class="d-block w-100" alt="imagen de oferta de viaje a Grecia">
+                      </div>
+                      <div class="carousel-item" data-bs-interval="2000">
+                        <img class="img-slider img-fluid" src="img/slider2.jpg" class="d-block w-100" alt="imagen de viaje a Australia">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="img-slider img-fluid" src="img/slider3.jpg" class="d-block w-100" alt="imagen de viaje a Nueva Zelanda">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+       </section>
+       <section>
+            <div class=" w-100 row interseccion">
+                <aside class="col-12 col-md-4 d-flex flex-column gap-3 parte-izquierda">
+                    <h1 class="text-center mb-4">¡Bienvenido!</h1>
+                    <div>
+                        <nav class="navbar bg-primary" data-bs-theme="dark">
+                            <div class="container-fluid d-flex justify-content-between">
+                                <a class="navbar-brand">Filtro</a>
+                                <form class="d-flex buscador" role="search">
+                                    <input class="form-control me-2 " type="search" placeholder="Buscar..." aria-label="Search" pattern="[A-Za-zÁ-Úá-ú ]{4,25}" title="Debe contener solo letras y tener entre 4 y 25 caracteres" required>
+                                    <button class="btn btn-outline-light" type="submit">
+                                        <i class="bi bi-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button nombre-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                              Valuacion
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <div>
+                                <h3 class="subt-acordeon">Por estrellas</h3>
+                                <div class="d-flex flex-column gap-3">
+                                    <div class="d-flex gap-2">
+                                        <input type="checkbox" name="" id="">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <input type="checkbox" name="" id="">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <input type="checkbox" name="" id="">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <input type="checkbox" name="" id="">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <div class="d-flex gap-2">
+                                        <input type="checkbox" name="" id="">
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button nombre-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne1" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                              Precio
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne1" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                                <h3 class="subt-acordeon">Desde</h3>
+                              <div class="d-flex  gap-3 ">
+                                <input class="check" type="checkbox" name="" id="">
+                                <P><span class="filtro-valor">300$</span> a <span class="filtro-valor">500$</span></P>
+                              </div>
+                              <div class="d-flex gap-3">
+                                <input type="checkbox" name="" id="">
+                                <P><span class="filtro-valor">500$</span> a <span class="filtro-valor">800$</span></P>
+                              </div>
+                              <div class="d-flex gap-3">
+                                <input type="checkbox" name="" id="">
+                                <P>Mayor a <span class="filtro-valor">800$</span></P>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header">
+                            <button class="accordion-button nombre-acordeon" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne2" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                              Duracion
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne2" class="accordion-collapse collapse show">
+                            <div class="accordion-body">
+                              <div class="d-flex  gap-3 ">
+                                <input type="checkbox" name="" id="">
+                                <P>Cuatro Noches</P>
+                              </div>
+                              <div class="d-flex gap-3">
+                                <input type="checkbox" name="" id="">
+                                <P>Una Semana</P>
+                              </div>
+                              <div class="d-flex gap-3">
+                                <input type="checkbox" name="" id="">
+                                <P>Dos semanas</P>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="publicidad ">
+                        <div class="container-fluid">
+                            <img class="img-fluid" src="https://www.logoscreativos.es/images/gifs/gifs_corporativo3.gif" alt="publicidad">
+                        </div>
+                        <div class="container-fluid">
+                            <img class="img-fluid" src="https://i.gifer.com/U8vY.gif" alt="publicidad">
+                        </div>
+                    </div>
+                </aside>
+                <div class="col-12 col-md-8 parte-derecha">
+                    <div class="container-fluid my-5">
+                        <h2 class="text-center  titulo">Mas Solicitados</h2>
+                        <div class="row salientes">
+                            <div class="col-6 superior">
+                                <a href="html/destinos/madrid.html">
+                                    <div class="card text-bg-light tarjeta">
+                                        <img class="img-salientes-superior-i filtro-imagen" src="./img/madrid.jpg" alt="imagen de Madrid">
+                                        <div class="card-img-overlay">
+                                            <h5 class="card-title">MADRID</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                            </div>
+                            <div class="col-6 superior">
+                                <a href="html/destinos/tokio.html">
+                                    <div class="card text-bg-dark tarjeta">
+                                        <img class="img-salientes-superior-d" src="https://elviajerofeliz.com/wp-content/uploads/2020/05/Por-qu%C3%A9-Tokio-es-una-de-las-ciudades-m%C3%A1s-sorprendentes.jpg"  alt="imagen de Tokio">
+                                        <div class="card-img-overlay">
+                                          <h5 class="card-title">TOKIO</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-12 inferior">
+                                <a href="html/destinos/paris.html">
+                                    <div class="card text-bg-dark tarjeta">
+                                        <img class="img-salientes" src="https://www.campusfrance.org/sites/default/files/styles/mobile_visuel_principal_page/public/Tour%20Eiffel%20feuilles%20vertes.jpg?itok=5lfveMrz"  alt="imagen de Paris">
+                                        <div class="card-img-overlay">
+                                          <h5 class="card-title">PARIS</h5>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid text-center">
+                        <h2 class="titulo">Destinos</h2>
+                        <article class="container-fluid ariculo ">
+                            <div class="row destino-contenedor d-flex flex-column justify-content-between align-items-center">
+                                <div class="col-12 d-flex sub-articulo">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-7 ">
+                                            <img class="imagen" src="https://elplanetaurbano.com/wp-content/uploads/2022/07/madrid-epu.jpg" alt="imagen de Madrid">
+                                        </div>
+                                        <div class="col-12 col-sm-5 d-flex flex-column gap-3 text-center">
+                                            <h3 class="my-3">Madrid</h3>
+                                            <p class="descripcion">¡Explora Madrid como nunca antes! Deleita tus sentidos con la pasión del flamenco, saborea tapas auténticas en tabernas históricas y admira obras maestras en el Museo del Prado. Desde la majestuosidad del Palacio Real hasta la energía de la Puerta del Sol.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row sub-articulo">
+                                    <a class="sub-articulo" href="html/destinos/madrid.html"><button class="col-12 mas">Saber mas</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="container-fluid ariculo">
+                            <div class="row destino-contenedor d-flex flex-column justify-content-between align-items-center">
+                                <div class="col-12 d-flex sub-articulo">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-7 ">
+                                            <img class="imagen" src="./img/Buildings-new-york-city.jpg" alt="imagen de New York">
+                                        </div>
+                                        <div class="col-12 col-sm-5 d-flex flex-column gap-3 text-center">
+                                            <h3 class="my-3">New York</h3>
+                                            <p class="descripcion">Vive la magia de Nueva York! Desde las luces deslumbrantes de Times Square hasta la serenidad de Central Park y el inconfundible horizonte de rascacielos.Nueva York te espera con una mezcla única de arte, cultura y emoción en la Gran Manzana.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row sub-articulo">
+                                    <a class="sub-articulo" href="html/destinos/new-york.html"><button class="col-12 mas">Saber mas</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="container-fluid ariculo">
+                            <div class="row destino-contenedor d-flex flex-column justify-content-between align-items-center">
+                                <div class="col-12 d-flex sub-articulo">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-7 ">
+                                            <img class="imagen" src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/Q65VXWNN2FEVNN4QOLAKSC7J5E.jpg" alt="imagen de Buenos Aires">
+                                        </div>
+                                        <div class="col-12 col-sm-5 d-flex flex-column gap-3 text-center">
+                                            <h3 class="my-3">Buenos Aires</h3>
+                                            <p class="descripcion">Explora Buenos Aires, donde la pasión del tango se mezcla con la elegancia europea. Saborea la deliciosa cocina, recorre barrios coloridos y sumérgete en su rica historia. ¡Tu aventura en Buenos Aires te aguarda!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row sub-articulo">
+                                    <a class="sub-articulo" href="html/destinos/buenos -aires.html"><button class="col-12 mas">Saber mas</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="container-fluid ariculo">
+                            <div class="row destino-contenedor d-flex flex-column justify-content-between align-items-center">
+                                <div class="col-12 d-flex sub-articulo">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-7 ">
+                                            <img class="imagen" src="https://imagenes.elpais.com/resizer/2tMKJy4AlWTBx5Kw67ENP-J4la8=/1960x1470/cloudfront-eu-central-1.images.arcpublishing.com/prisa/MPEDLDCHGBQ5QHIS7AHNLKSTQI.jpg" alt="imagen de Tokio">
+                                        </div>
+                                        <div class="col-12 col-sm-5 d-flex flex-column gap-3 text-center">
+                                            <h3 class="my-3">Tokio</h3>
+                                            <p class="descripcion">Descubre Tokio, un fascinante choque entre tradición y tecnología de vanguardia. Sumérgete en la cultura del anime, saborea la gastronomía única y explora templos milenarios junto a rascacielos modernos. ¡Tu viaje a Tokio te espera!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row sub-articulo">
+                                    <a class="sub-articulo" href="html/destinos/tokio.html"><button class="col-12 mas">Saber mas</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="container-fluid ariculo">
+                            <div class="row destino-contenedor d-flex flex-column justify-content-between align-items-center">
+                                <div class="col-12 d-flex sub-articulo">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-7 ">
+                                            <img class="imagen" src="https://almundo.com.ar/comunidad/wp-content/uploads/2022/03/santiago-de-chile.jpg" alt="imagen de Santiago de Chile">
+                                        </div>
+                                        <div class="col-12 col-sm-5 d-flex flex-column gap-3 text-center">
+                                            <h3 class="my-3">Santiago de Chile</h3>
+                                            <p class="descripcion">Explora Santiago de Chile, donde la belleza de los Andes se encuentra con la vitalidad de una ciudad moderna. Disfruta de su rica historia, pasea por encantadoras calles y degusta la deliciosa comida chilena. Desde sus parques hasta su vibrante vida nocturna</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row sub-articulo">
+                                    <a class="sub-articulo" href="html/destinos/santiago-ch.html"><button class="col-12 mas">Saber mas</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="container-fluid ariculo">
+                            <div class="row destino-contenedor d-flex flex-column justify-content-between align-items-center">
+                                <div class="col-12 d-flex sub-articulo">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-7 ">
+                                            <img class="imagen" src="https://wallpaperset.com/w/full/d/9/7/87587.jpg" alt="imagen de Paris">
+                                        </div>
+                                        <div class="col-12 col-sm-5 d-flex flex-column gap-3 text-center">
+                                            <h3 class="my-3">Paris</h3>
+                                            <p class="descripcion">Vive la magia de París, la Ciudad de la Luz. Recorre sus icónicas calles empedradas, maravíllate con la majestuosidad de la Torre Eiffel y descubre la elegancia en cada rincón. Desde el romanticismo del río Sena hasta la energía de Montmartre</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row sub-articulo">
+                                    <a class="sub-articulo" href="html/destinos/paris.html"><button class="col-12 mas">Saber mas</button>
+                                    </a>
+                                </div>
+                            </div>
+                        </article>
+                        <div class="w-100 my-5 d-flex justify-content-center">
+                            <nav aria-label="...">
+                                <ul class="pagination">
+                                  <li class="page-item disabled">
+                                    <a class="page-link">Anterior</a>
+                                  </li>
+                                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item " aria-current="page">
+                                    <a class="page-link disabled" href="#">2</a>
+                                  </li>
+                                  <li class="page-item disabled"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item">
+                                    <a class="page-link disabled" href="#">Siguiente</a>
+                                  </li>
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+    </main>
+    <footer class=" text-light p-1">
+        <div class="d-flex justify-content-around align-items-center bg-footer">
+            <div class="row text-footer">
+                <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+                    <img width="300px" height="100px" src="./img/log3.png" alt="">
+                </div>
+                <div
+                    class="col-sm-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center gap-3">
+                    <h5 class="li-letra mb-3">Redes Sociales</h5>
+                    <ul class="list-unstyled d-flex">
+                        <li class="me-3">
+                            <a href="https://m.facebook.com/login/?locale=es_LA" target="_blank">
+                                <i class="fa-brands fa-facebook fa-fade fa-2xl ico-redes"></i>
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                                <i class="fa-brands fa-instagram fa-fade fa-2xl ico-redes"></i>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                                <i class="fa-brands fa-whatsapp fa-fade fa-2xl ico-redes"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center ">
+                    <p class="text-center ">Somos CEROLimites, una empresa dedicadas a los viajes por todo el mundo. Contamos con años de
+                        experiencia que nos han hecho recomendados por miles de clientes. Espero les guste nuestra pagina de Eccomers
+                        <br><br>
+                        ©COPYRIGHT 2023
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

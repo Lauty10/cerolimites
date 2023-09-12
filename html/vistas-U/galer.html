@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="shortcut icon" href="../../img/icon.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../../css/galeria.css">
+</head>
+<body id="color-body">
+</head>
+<body id="color-body">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="inicio-u.html"><img src="../../img/log3.png" width="150px" height="50px" alt="" class="img mx-2"></a>
+            <button class="navbar-toggler bg-dark-subtle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="inicio-u.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contacto-u.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="nosotros-u.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="perfil.html">Perfil</a>
+                    </li>
+                </ul>
+                <div>
+                    <button type="button"  class="btn btn-outline-light btn-sm mx-2" data-bs-toggle="modal"            data-bs-target="#ModalPerfil">
+                       Favoritos
+                    </button>
+                    <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        Ver Carrito
+                    </button>
+                    <a href="../../index.html">
+                        <button class="btn btn-outline-light me-1 btn-volver">
+                        Cerrar sesion
+                        </button>
+                    </a>
+                </div>        
+            </div>
+        </div>
+    </nav>    
+  </header>    
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title color" id="cartModalLabel">Carrito de Compras</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <ul class="cart-list color">
+                    <li>Madrid - Precio: $100.000usd</li>
+                    <li>Tokyo - Precio: $200.000usd</li>
+                    <li>New York - Precio: $150.000usd</li>
+                </ul>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <a href="404.html">
+                    <button type="button" class="btn btn-primary">Realizar Compra</button>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="modal fade" id="ModalPerfil" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title color" id="profileModalLabel">Favoritos</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body color">
+                  <form>
+                      <div class="mb-3">
+                          <label for="profileName" class="form-label">Santiago de Chile</label>
+                      </div>
+                      <div class="mb-3">
+                          <img src="https://images.unsplash.com/photo-1566079463188-97d2f1352582?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" width="150px">
+                      </div>
+                  </form>
+                  <form>
+                      <div class="mb-3">
+                          <label for="profileName" class="form-label">Paris</label>
+                      </div>
+                      <div class="mb-3">
+                          <img src="https://images.unsplash.com/photo-1550340499-a6c60fc8287c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" width="150px">
+                      </div>
+                  </form>
+                  <form>
+                      <div class="mb-3">
+                          <label for="profileName" class="form-label">Buenos Aires</label>
+                      </div>
+                      <div class="mb-3">
+                          <img src="https://images.unsplash.com/photo-1612294037637-ec328d0e075e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" width="150px">
+                      </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+    <main class="my-3">
+        <h1 class="d-flex justify-content-center color-h1 py-3 text-light mt-3 px-3">Galeria de imagenes</h1>
+        <h2 class="d-flex justify-content-center color-h1 py-3 text-light px-3 mt-3 ">Tokio, Japon.</h2>
+          <div class="container mt-4 color-container">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4 col-lg-3 color-container pt-4 pb-4 d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/17777482/pexels-photo-17777482/free-photo-of-oscuro-torre-asia-iluminado.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Tokio">
+                          <div class="card-body">
+                            <h5 class="card-title">Tokio, la ciudad inteligente</h5>
+                            <p class="card-text">Tokio, esta dentro del 3% de ciudades globales consideradas inteligentes segun la onu. Debido a su capacidad de resolver problemas criticos en poco tiempo. Ademas es de las ciudades que optimiza recursos eficientemente, cuenta con buena planificacion urbana, ecologia, proyeccion internacional, ect.</p>
+                        
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4 pb-4  d-flex justify-content-center ">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/17772813/pexels-photo-17772813/free-photo-of-flores-jardin-plantas-tradicional.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Ecologia en Tokio</h5>
+                            <p class="card-text">Tokyo, descubrimos la historia de los parques, jardines y oasis que ayudan a respirar a una de las capitales con mayor densidad de población del mundo y a relajarse a sus cerca de 14 millones de habitantes</p>
+               
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4 pb-4  d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/17654135/pexels-photo-17654135/free-photo-of-punto-de-referencia-bosque-lago-colinas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Informacion de tokio</h5>
+                            <p class="card-text">Tokio, la capital de Japon, una ciudad de 2.187.087 km2 viven mas de 13 millones de personas y aún con esa cantidad es una ciudad limpia, ordenada, de medios de transporte eficientes y lo mejor de todo, absolutamente segura.</p>
+                            
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-3 pt-4 pb-4  d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/4058519/pexels-photo-4058519.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Religion</h5>
+                            <p class="card-text">Igual que en el resto de Japon, las mayorias de personas adoptaron el sintoismo. Pero muchas personas tambien adoptaron el budismo. Siendo ambas  interesantes opciones a conocer </p>
+                            
+                          </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+          <h2 class="d-flex justify-content-center color-h1 py-3 text-light px-3 mt-3 mb-3 ">Nueva York, Estados Unidos.</h2>
+          <div class="container color-container">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4 pb-4 pb-4  d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/15327259/pexels-photo-15327259/free-photo-of-ciudad-hombre-mujer-edificios.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="new york-night">
+                          <div class="card-body">
+                              <h5 class="card-title">Nueva York, el centro global</h5>
+                            <p class="card-text">Nueva york, es la ciudad mas poblada de los Estados Unidos, y una de las mas pobladas del mundo con un area urbana de 24 millones de habitantes. Tambien es el centro economico y politico global ,con la sede de la ONU y muchas empresas e instituciones financieras. Nueva York se divide en cinco distritos: El Bronx, Queens, Staten Island, Manhattan y Brooklyn.</p>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4 pb-4   d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/15327180/pexels-photo-15327180/free-photo-of-ciudad-punto-de-referencia-nubes-nueva-york.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="new york">
+                          <div class="card-body">
+                            <h5 class="card-title">Datos interesantes</h5>
+                            <p class="card-text">La Estatua de la Libertad fue un regalo de Francia a Estados Unidos en 1886, Nueva York tiene el sistema de metro más grande del mundo, con 472 estaciones y más de 1300 km de vías,El Empire State Building fue el edificio más alto del mundo desde 1931 hasta 1972,Nueva York tiene más de 26 mil restaurantes, que ofrecen comida de todos los países y culturas del mundo.</p>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4 pb-4   d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/15327222/pexels-photo-15327222/free-photo-of-ciudad-coches-calle-edificios.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="new york">
+                          <div class="card-body">
+                            <h5 class="card-title">El tiempo en Nueva York</h5>
+                            <p class="card-text">Nueva York tiene un clima húmedo continental, con veranos calurosos e inviernos fríos. La temperatura promedio en verano es de unos 26°C, y en invierno de unos 2°C.La nieve suele caer entre diciembre y marzo, aunque puede variar según el año</p>
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-3 pt-4  pt-4 pb-4  d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/15463009/pexels-photo-15463009/free-photo-of-blanco-y-negro-caminando-edificios-nueva-york.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="new york">
+                          <div class="card-body">
+                            <h5 class="card-title">Neoyorquinos</h5>
+                            <p class="card-text">Los primeros habitantes de Nueva york fueron los Lenape, un pueblo indígena que vivía entre los ríos Hudson y Delaware. Luego los primeros europeos en llegar a la zona fueron los holandeses, que fundaron la colonia de Nueva Ámsterdam en 1624. Finalmente En 1664, los ingleses se apoderaron de la colonia y la llamaron Nueva York. Desde entonces, Nueva York ha recibido a millones de inmigrantes de todo el mundo, que han aportado su cultura e idioma</p>
+                          </div>
+                        </div>
+  
+                  </div>
+              </div>
+          </div>
+          <h2 class="d-flex justify-content-center color-h1 py-3 text-light px-3 mt-3 mb-3 ">Ciudad de Buenos Aires, Argentina.</h2>
+          <div class="container  color-container">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4 pb-4   d-flex justify-content-center ">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/17835165/pexels-photo-17835165/free-photo-of-ciudad-panorama-urbano-tormenta-fumar.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="buenos aires">
+                          <div class="card-body">
+                            <h5 class="card-title">Ciudad de Buenos Aires</h5>
+                            <p class="card-text">La ciudad de buenos aires, es la capital de la republica Argentina y sede del gobierno federal. Esta ubicada en el centro-este del pais, sobre la orilla del rio de la plata.La ciudad es una entidad autónoma que forma parte de los 24 distritos que componen la República Argentina. Tiene sus propios poderes ejecutivo, legislativo y judicial, así como su propia policía</p>
+            
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4 pb-4   d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/16228320/pexels-photo-16228320/free-photo-of-escaleras-ciudad-punto-de-referencia-nubes.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Buenos aires">
+                          <div class="card-body">
+                            <h5 class="card-title">La ciudad cosmopolita</h5>
+                            <p class="card-text">Se dice que Buenos Aires es una de las ciudades cosmopolitas de América porque tiene una gran diversidad cultural y urbana, producto de las diferentes olas migratorias que recibió a lo largo de su historia. En Buenos Aires conviven personas de distintas nacionalidades, religiones, idiomas y costumbres, que le dan un carácter abierto y tolerante a la ciudad</p>
+          
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4 pb-4  d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/16355457/pexels-photo-16355457/free-photo-of-ciudad-urbano-fachada-ciudades.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="obelisco">
+                          <div class="card-body">
+                            <h5 class="card-title">Arquitectura de la ciudad de buenos aires</h5>
+                            <p class="card-text">Los edificios antiguos de Buenos Aires reflejan la influencia europea que tuvo la ciudad desde su fundación hasta principios del siglo XX. La arquitectura colonial se caracterizó por el uso de ladrillos, tejas, revoques y balcones de hierro forjado, con un estilo sobrio y funcional.A fines del siglo XIX y principios del XX, se produjo un auge de la construcción que incorporó estilos como el academicismo francés, el neorrenacimiento italiano, el art nouveau, el art decó y el eclecticismo. Estos estilos se manifestaron en edificios como el Teatro Colón.</p>
+                  
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-3 pt-4 pb-4  d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/15348247/pexels-photo-15348247/free-photo-of-hombre-gente-mujer-calle.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="buenos aires">
+                          <div class="card-body">
+                            <h5 class="card-title">Cuna del tango, futbol y el asado</h5>
+                            <p class="card-text">La ciudad de Buenos Aires es la cuna del tango, futbol y el asado.El tango nació en la cuenca del Río de la Plata, entre las clases populares de Buenos Aires y Montevideo, como una fusión de ritmos e influencias de los emigrantes europeos, los descendientes de esclavos africanos y los pueblos criollos.El fútbol llegó a Buenos Aires a fines del siglo XIX, traído por los inmigrantes británicos que trabajaban en el ferrocarril y La carne asada es una tradición gastronómica que se remonta a la época colonial, cuando los gauchos criollos asaban la carne al asador o a la parrilla en las pampas</p>
+         
+                          </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+          <h2 class="d-flex justify-content-center color-h1 py-3 text-light px-3 mt-3 mb-3 ">Santiago de Chile, Chile.</h2>
+          <div class="container  color-container">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4 pb-4  d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/17403824/pexels-photo-17403824/free-photo-of-ciudad-cielo-panorama-urbano-edificio.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="santiagoDeChile">
+                          <div class="card-body">
+                            <h5 class="card-title">Santiago de Chile</h5>
+                            <p class="card-text">Santiago de Chile, tiene alrededor una poblacion de 5.250.565 habitantes. La densidad poblacional mas alta del pais, ademas Santiago de Chile cuenta con 32 comunas. En Santiago de chile se encuentra establecida el 36% de la poblacion de chile. </p>
+                       
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-3  pt-4 pb-4  d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/16134637/pexels-photo-16134637/free-photo-of-vacaciones-punto-de-referencia-viaje-monumento.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Chile">
+                          <div class="card-body">
+                            <h5 class="card-title">Cultura Chilena</h5>
+                            <p class="card-text">La cultura de Santiago de Chile es multinacional, con una fusión única de varias culturas y tradiciones. Además, Santiago ofrece una gran variedad de actividades culturales, como exposiciones, teatro, música y danza.</p>
+             
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4 pb-4   d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/10822037/pexels-photo-10822037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Chile edificio">
+                          <div class="card-body">
+                            <h5 class="card-title">Ubicacion de Santiago</h5>
+                            <p class="card-text">Santiago de Chile se encuentra ubicada en el centro del país, entre la cordillera de los Andes y la cordillera de la Costa. Está a unos 100 km de la costa del océano Pacífico</p>
+        
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-3 pt-4 pb-4  d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/17527586/pexels-photo-17527586/free-photo-of-ciudad-calle-edificio-casa.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="BarrioChileno">
+                          <div class="card-body">
+                            <h5 class="card-title">El clima</h5>
+                            <p class="card-text">El clima en Santiago de Chile es templado-cálido, con una estación seca muy prolongada de entre 7 a 8 meses y con lluvias durante los meses de invierno, fundamentalmente entre mayo y septiembre1. La temperatura media anual es de 14°C</p>
+     
+                          </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+          <h2 class="d-flex justify-content-center color-h1 py-3 text-light px-3 mt-3 mb-3 ">Paris, Francia.</h2>
+          <div class="container  color-container">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4 pb-4   d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/1125212/pexels-photo-1125212.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Paris desde el cielo">
+                          <div class="card-body">
+                            <h5 class="card-title">La torre eiffel</h5>
+                            <p class="card-text">La torre Eiffel se construyó entre 1887 y 1889 con motivo de la exposición universal.La torre Eiffel mide 324 metros de altura y pesa unas 10.000 toneladas.La torre Eiffel es una obra maestra de la ingeniería y el diseño, que ha inspirado a muchos artistas y creadores a lo largo de su historia.</p>
+                           
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4 pb-4  d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;"> 
+                          <img src="https://images.pexels.com/photos/2574631/pexels-photo-2574631.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="calle en paris">
+                          <div class="card-body">
+                            <h5 class="card-title">La cultura de Paris</h5>
+                            <p class="card-text">La gastronomía parisina es variada y refinada, con platos típicos como el foie gras, el queso, el croissant o la crema brûlée. París cuenta con numerosos restaurantes de alta cocina, algunos de ellos galardonados con estrellas Michelin. Mientras tanto la moda  parisina es una de las más influyentes y elegantes del mundo, con diseñadores como Coco Chanel, Christian Dior o Yves Saint Laurent. París es la sede de importantes eventos de moda, como la Semana de la Moda o el Salón del Prêt-à-Porter.</p>
+                            
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4  pb-4  d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/548077/pexels-photo-548077.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">La ciudad del amor</h5>
+                            <p class="card-text">Paris, la denominada ciudad del amor. Esta ciudad a sido denominada de esta manera ya que su arquitectura, que crea un ambiente de ensueño con sus monumentos, puentes, plazas y fuentes.Su literatura, que ha dado origen a numerosas novelas y poemas románticos, como Los Miserables, El Jorobado de Notre Dame.Su música, que ha sido el escenario de canciones y espectáculos que expresan el amor</p>
+                         
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-3 pt-4 pb-4   d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/705766/pexels-photo-705766.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">La ciudad de los 2000 años</h5>
+                            <p class="card-text">París es una ciudad con una larga y rica historia, que se remonta a más de dos mil años. París fue fundada por el pueblo celta de los Parisii, que se establecieron en la orilla derecha del río Sena alrededor del siglo III a.C. París ha sido una ciudad influyente en el ámbito de la cultura, el arte, la ciencia, la filosofía y la política, tanto a nivel nacional como internacional</p>
+          
+                          </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+          <h2 class="d-flex justify-content-center color-h1 py-3 text-light px-3 mt-3 mb-3 ">Madrid, España.</h2>
+          <div class="container  color-container">
+              <div class="row">
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4 pb-4  d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/17732648/pexels-photo-17732648/free-photo-of-ciudad-punto-de-referencia-edificio-arboles.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Madrid">
+                          <div class="card-body">
+                            <h5 class="card-title">Cultura de madrid</h5>
+                            <p class="card-text">Madrid alberga algunos de los museos más importantes del mundo, como el Prado, el Reina Sofía o el Thyssen-Bornemisza, que forman parte del llamado Paseo del Arte, un itinerario que reúne obras maestras de la pintura universal</p>
+           
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4 pb-4   d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/3757136/pexels-photo-3757136.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="Edficios madrid">
+                          <div class="card-body">
+                            <h5 class="card-title">Madrid, España</h5>
+                            <p class="card-text">Madrid es la tercera ciudad más grande de la Unión Europea, después de Berlín y Londres, y tiene una población de más de 6 millones de habitantes en su área metropolitana</p>
+  
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-4 col-lg-3 pt-4 pb-4  d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/15949287/pexels-photo-15949287/free-photo-of-sol-edificio-techo-espana.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Gastronomia de Madrid</h5>
+                            <p class="card-text">La gastronomía de Madrid es el resultado de la fusión de las diferentes cocinas regionales de España, así como de las influencias de otras culturas que han dejado su huella en la ciudad. Se caracteriza por su sencillez, su variedad y su sabor.</p>
+  
+                          </div>
+                        </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-3 pt-4 pb-4  d-flex justify-content-center">
+                      <div class="card" style="width: 18rem;">
+                          <img src="https://images.pexels.com/photos/16342540/pexels-photo-16342540/free-photo-of-blanco-y-negro-ciudad-noche-espana.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">La ciudad que no duerme</h5>
+                            <p class="card-text">Madrid es también una ciudad con mucha vida nocturna, con una gran oferta de bares, restaurantes, discotecas y espectáculos para todos los gustos y edades. Se dice que Madrid nunca duerme y que tiene más bares por habitante que cualquier otra ciudad europea</p>
+  
+                          </div>
+                        </div>
+                  </div>
+              </div>
+          </div>
+      </main>
+      <footer class=" text-light p-1">
+        <div class="d-flex justify-content-around align-items-center bg-footer">
+            <div class="row text-footer">
+                <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+                    <img width="300px" height="100px" src="../../img/log3.png" alt="">
+                </div>
+                <div
+                    class="col-sm-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center gap-3">
+                    <h5 class="li-letra mb-3">Redes Sociales</h5>
+                    <ul class="list-unstyled d-flex">
+                        <li class="me-3">
+                            <a href="https://m.facebook.com/login/?locale=es_LA" target="_blank">
+                                <i class="fa-brands fa-facebook fa-fade fa-2xl ico-redes"></i>
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                                <i class="fa-brands fa-instagram fa-fade fa-2xl ico-redes"></i>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                                <i class="fa-brands fa-whatsapp fa-fade fa-2xl ico-redes"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center ">
+                    <p class="text-center ">Somos CEROLimites, una empresa dedicadas a los viajes por todo el mundo. Contamos con años de
+                        experiencia que nos han hecho recomendados por miles de clientes. Espero les guste nuestra
+                        pagina
+                        de Eccomers
+                        <br><br>
+                        ©COPYRIGHT 2023
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/5fab88efc3.js" crossorigin="anonymous"></script>
+</html>

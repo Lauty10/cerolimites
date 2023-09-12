@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="El mejor sitio para viajes internacionales en todo el mundo">
+    <meta name="keywords" content="viajes,destinos turisticos,nueva york,Estados Unidos,viaje">
+    <title>Nueva York CeroLimites</title>
+    <link rel="shortcut icon" href="../../img/icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/5fab88efc3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../css/destinos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  </head>
+  <body id="color-body">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-navbar fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="inicio-u.html"><img src="../../img/log3.png" width="150px" height="50px" alt="" class="img mx-2"></a>
+            <button class="navbar-toggler bg-dark-subtle" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="inicio-u.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="contacto-u.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="nosotros-u.html">Acerca de Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="perfil.html">Perfil</a>
+                    </li>
+                </ul>
+                <div>
+                    <button type="button"  class="btn btn-outline-light btn-sm mx-2" data-bs-toggle="modal"            data-bs-target="#ModalPerfil">
+                       Favoritos
+                    </button>
+
+                    <button type="button" class="btn btn-outline-light btn-sm" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        Ver Carrito
+                    </button>
+                    <a href="../../index.html">
+                        <button class="btn btn-outline-light me-1 btn-volver">
+                        Cerrar sesion
+                        </button>
+                    </a>
+                </div>        
+            </div>
+        </div>
+      </nav>    
+   </header>    
+  <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title color" id="cartModalLabel">Carrito de Compras</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body color">
+                  <ul class="cart-list">
+                      <li>Madrid - Precio: $100.000usd</li>
+                      <li>Tokyo - Precio: $200.000usd</li>
+                      <li>New York - Precio: $150.000usd</li>
+                  </ul>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                  <a href="404.html">
+                    <button type="button" class="btn btn-primary">Realizar Compra</button>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </div>
+   <div class="modal fade" id="ModalPerfil" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title color" id="profileModalLabel">Favoritos</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body color">
+                  <form>
+                      <div class="mb-3">
+                          <label for="profileName" class="form-label">Santiago de Chile</label>
+                      </div>
+                      <div class="mb-3">
+                          <img src="https://images.unsplash.com/photo-1566079463188-97d2f1352582?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" width="150px">
+                      </div>
+                  </form>
+                  <form>
+                      <div class="mb-3">
+                          <label for="profileName" class="form-label">Paris</label>
+                      </div>
+                      <div class="mb-3">
+                          <img src="https://images.unsplash.com/photo-1550340499-a6c60fc8287c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" width="150px">
+                      </div>
+                  </form>
+                  <form>
+                      <div class="mb-3">
+                          <label for="profileName" class="form-label">Buenos Aires</label>
+                      </div>
+                      <div class="mb-3">
+                          <img src="https://images.unsplash.com/photo-1612294037637-ec328d0e075e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="" width="150px">
+                      </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+          </div>
+      </div>
+  </div>
+    <main class="mb-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="https://images.pexels.com/photos/1737957/pexels-photo-1737957.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="Nueva york-centro">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://images.pexels.com/photos/3875821/pexels-photo-3875821.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="puente-nueva-york">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="https://images.pexels.com/photos/755050/pexels-photo-755050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100" alt="estatua-de-la-libertad">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                 </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container color-container-tokio py-4 d-flex justify-content-center">
+            <div class="row">
+                <div class="col-sm-5 col-md-6 col-lg-6 mx-auto">
+                    <P class="relleno">¿Te gustaría viajar a la gran manzana?, la ciudad que nunca duerme, esta ciudad tiene mas de 60 millones de habitantes al año y es la metropolis mas grande de EEUU y unas de las mas grandes del mundo entero. Es una ciudad caracterizada por ser un centro multicultural y cosmopolita. Tambien es una ciudad que ofrece una increible gama de actividades como la moda, el arte, la musica, el cine y el deporte.</P>
+                </div>
+                <div class="col-sm-5 col-md-6 col-lg-6 mx-auto ">
+                   <p class="relleno">Nueva york es considerada un centro global de la economia mundial. Muchos la denominaron el enlance de EEUU hacia el resto del mundo para el comercio y los negocios internacionales, ya que es la segunda economia urbana mas grande del mundo despues de Tokio. Es uno de los principales centro de finazas, seguros, bienes raices, medios de comunicacion y arte de los EEUU.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="d-grid gap-2 dropdown">
+                        <button class="btn btn-primary  dropdown-toggle" type="button" data-bs-toggle="dropdown">Actividades de Cerolimites en Nueva York</button>
+                        <ul class="dropdown-menu  dropdown-menu-center w-100 text-center" style="margin: 0 10px; background-color:  #000000;">
+                            <li><a href="https://mynewyorkblog.com/empire-state/" target="_blank">El gran Empire State</a></li>
+                            <li><a href="https://www.culturagenial.com/es/estatua-de-la-libertad/" target="_blank">Estatua de la Libertad</a></li>
+                            <li><a href="https://www.nuevayork.net/central-park" target="_blank">Central Park</a></li>
+                            <li><a href="https://www.nuevayork.net/times-square" target="_blank">Times Square</a></li>
+                            <li><a href="https://www.broadway.org/es/shows" target="_blank">Espectaculos de Broadway</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 mt-5 d-flex justify-content-center tokio-img">
+                    <img src="https://images.pexels.com/photos/7078467/pexels-photo-7078467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="nueva york">
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container py-4 color-container-tokio">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12 col">
+                    <p class="relleno">Cerolimites los invita en este paquete a el Hotel Skyline es un lujoso hotel de cinco estrellas ubicado en el corazón de Manhattan, a solo unos pasos de Times Square, el Empire State Building y el Central Park. El hotel ofrece 300 habitaciones y suites con vistas panorámicas a la ciudad, equipadas con todas las comodidades modernas, como wifi gratis, televisores de pantalla plana, minibar y cafetera. El hotel también cuenta con un spa, una piscina cubierta, un gimnasio, un restaurante de alta cocina, un bar en la azotea y un centro de negocios. El Hotel Skyline es el lugar ideal para disfrutar de una estancia inolvidable en Nueva York, ya sea por negocios o por placer. Reserva tu habitación hoy mismo en www.cerolimites.com y aprovecha las ofertas especiales que tenemos para ti.</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col d-flex justify-content-center">
+                    <div class="card mb-3" style="max-width: 540px; border-color: black; box-shadow: 0 0 10px rgba(236, 232, 232, 0.865);">
+                        <div class="row g-0">
+                          <div class="col-md-4">
+                            <img src="https://images.pexels.com/photos/64271/queen-of-liberty-statue-of-liberty-new-york-liberty-statue-64271.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class=" h-100 img-fluid rounded-start" alt="estatua de la libertad">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body bg-dark text-light ">
+                              <h5 class="card-title">Nueva york</h5>
+                              <p class="card-text">CeroLimites te invita a conocer la ciudad mas grande de los EEUU, Nueva york. Este viaje incluye 6 dias y 5 noches en Nueva york. El paquete incluye todo lo anterior mencionado y un recorrido en auto con un guia de habla hispana a todas las actividades que ofrece CeroLimites. El paquete incluye el vuelo ida y vuelta </p>
+                              <div class="d-flex justify-content-between align-items-center">
+                                <a href="404.html">
+                                    <button type="button" class="btn btn-primary ">Precio final 1171 USD
+                                    </button>
+                                </a>
+                                <div class="d-flex gap-3">
+                                  <i class="bi bi-bookmark-star-fill ico" data-bs-toggle="tooltip" data-bs-placement="top"
+                                  data-bs-class="custom-tooltip"
+                                  title="Agregar a favoritos"></i>
+                                  <i class="bi bi-cart-plus ico" data-bs-toggle="tooltip" data-bs-placement="top"
+                                  data-bs-class="custom-tooltip"
+                                  title="Agregar al carrito"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="container d-flex justify-content-center color-container-tokio">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <form action="https://formspree.io/f/mjvqwwyr" method="post" class="formulario">
+                        <h1 class="mb-3 mt-3">Valora este paquete a Nueva york</h1>
+                        <p>Nombre:<input type="text" name="nombre" required pattern="[A-Za-z\s]+" minlength="2" maxlength="20"></p>
+                        <p>Correo :<input type="email" name="email" required></p>   
+                        <p>Calificación:
+                          <select name="calificacion" required>
+                            <option value="1">⭐</option>
+                            <option value="2">⭐⭐</option>
+                            <option value="3">⭐⭐⭐</option>
+                            <option value="4">⭐⭐⭐⭐</option>
+                            <option value="5">⭐⭐⭐⭐⭐</option>
+                          </select>
+                        </p>
+                        <p><textarea name="comentario" rows="5" cols="40"  pattern="[A-Za-z0-9\s.,;:?!]+ " required placeholder="Deja tu comentario" minlength="4"></textarea></p>
+                        <p><input type="submit" value="Enviar"></p>
+                      </form>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-12">
+                      <ul class="comentarios mt-4">
+                        <li class="mb-2">
+                          <p><strong>Laura</strong> ⭐⭐⭐⭐⭐</p>
+                          <p>Me encantó el paquete a Nueva York que compré en cerolimites.com. El hotel era espectacular, muy bien ubicado y con un servicio excelente. El vuelo fue puntual y cómodo, y el traslado al hotel muy rápido. Disfruté mucho de la ciudad, hay tanto que ver y hacer. Recomiendo este paquete a todos los que quieran vivir una experiencia única en Nueva York. Le doy cinco estrellas</p>
+                        </li>
+                        <li class="mb-2">
+                          <p><strong>Paola</strong> ⭐⭐⭐⭐</p>
+                            Compré el paquete a Nueva York para celebrar mi aniversario con mi esposo y fue la mejor decisión. El hotel era precioso, con una vista increíble a la ciudad. La habitación era muy amplia y confortable, y el desayuno muy rico. El personal del hotel fue muy amable y atento. La ciudad es maravillosa, hay tantos lugares para visitar y disfrutar.</p>
+                        </li>
+                        <li class="mb-2">
+                          <p><strong>Facundo</strong> ⭐⭐⭐⭐⭐</p>
+                          <p>El paquete a Nueva York que compré en cerolimites.com fue una gran oportunidad. El precio era muy bueno y el hotel era de primera categoría. La ubicación era perfecta, cerca de todo lo que quería ver en la ciudad. El vuelo fue tranquilo y sin demoras, y el traslado al hotel muy eficiente.</p>
+                        </li>
+                        <li class="mb-2">
+                          <p><strong>Lautaro</strong> ⭐⭐⭐</p>
+                          <p>El paquete a Nueva York que compré en cerolimites.com fue una experiencia increíble. El hotel era fantástico, con una decoración moderna y elegante. La habitación era muy cómoda y limpia, y el baño muy amplio.</p>
+                        </li class="mb-2">
+                        <p><strong>Carlos</strong> ⭐⭐⭐⭐</p>
+                         <p>El paquete a Nueva York que compré en cerolimites.com fue un sueño hecho realidad. El hotel era maravilloso, con un ambiente acogedor y lujoso. La habitación era muy bonita y confortable, y tenía una vista espectacular a la ciudad. El hotel tenía un restaurante de alta cocina, un bar en la azotea y un centro de negocios que usé mucho.</p>
+                         </li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+      
+    </main>
+    <footer class=" text-light p-1">
+        <div class="d-flex justify-content-around align-items-center bg-footer">
+            <div class="row text-footer">
+                <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center">
+                    <img width="300px" height="100px" src="../../img/log3.png" alt="">
+                </div>
+                <div
+                    class="col-sm-12 col-md-6 col-lg-4 d-flex flex-column justify-content-center align-items-center gap-3">
+                    <h5 class="li-letra mb-3">Redes Sociales</h5>
+                    <ul class="list-unstyled d-flex">
+                        <li class="me-3">
+                            <a href="https://m.facebook.com/login/?locale=es_LA" target="_blank">
+                                <i class="fa-brands fa-facebook fa-fade fa-2xl ico-redes"></i>
+                            </a>
+                        </li>
+                        <li class="me-3">
+                            <a href="https://www.instagram.com/accounts/login/" target="_blank">
+                                <i class="fa-brands fa-instagram fa-fade fa-2xl ico-redes"></i>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank">
+                                <i class="fa-brands fa-whatsapp fa-fade fa-2xl ico-redes"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-4 d-flex justify-content-center align-items-center ">
+                    <p class="text-center ">Somos CEROLimites, una empresa dedicadas a los viajes por todo el mundo. Contamos con años de
+                        experiencia que nos han hecho recomendados por miles de clientes. Espero les guste nuestra
+                        pagina
+                        de Eccomers
+                        <br><br>
+                        ©COPYRIGHT 2023
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </body>
+</html>
+
